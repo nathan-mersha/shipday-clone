@@ -1,7 +1,7 @@
 import React from 'react'
 import GoogleMapReact from 'google-map-react';
 
-const Map = () => {
+const DispatchMapTracker = () => {
 
   const initials = {
     center: {
@@ -11,7 +11,7 @@ const Map = () => {
     zoom: 11
   };
   return (
-    <div style={{ height: '100vh', width: '100%' }}>
+    <div style={{ height: '100vh', width: '50%' }}>
         <GoogleMapReact
           // bootstrapURLKeys={{ key: /* YOUR KEY HERE */ }}
           defaultCenter={initials.center}
@@ -23,4 +23,4 @@ const Map = () => {
   )
 }
 
-export default Map
+export default DispatchMapTracker

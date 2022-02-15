@@ -1,6 +1,6 @@
 import './App.css';
 
-import Dispatch from './components/Dispatch'
+import Dispatch from './components/Dispatch/Dispatch'
 import Drivers from './components/Driver/Drivers'
 import Integrations from './components/Integrations'
 import Map from './components/Map'
@@ -53,7 +53,7 @@ function App() {
           </div>
         </header>
         <Routes>
-          <Route path="/" element={<Drivers />} />
+          <Route path="/" element={<Dispatch />} />
           <Route path="/dispatch" element={<Dispatch />} />
           <Route path="/orders" element={<Orders />} />
           <Route path="/drivers" element={<Drivers />} />
